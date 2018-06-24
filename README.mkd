@@ -1,0 +1,44 @@
+# syne
+Debugging with your brain.
+
+
+With syne, you can take a look at your collections
+with colors instead of values. General rules :
+
+- same objects get the same color
+- close objects get close colors
+
+```python
+from syne import syne
+
+syne([1, 2, 3, 4])
+syne(['abcd', 'abcd', 'abcde', 'ABCD'])
+```
+
+## Sound
+Syne also features the use of sound:
+
+```python
+from syne import syne
+
+syne.sound([1, 2, 3, 4])
+syne.sound(['abcd', 'abcd', 'abcde', 'ABCD'])
+```
+
+
+## Cozmo integration
+Cozmo is a little robot. It can help you debug.
+
+
+## Other senses
+You have a programmable smell dispenser ? Robot masseur ? Arduino wired to your radiator ?
+Or maybe your desktop is in an acceleration simulator ?
+
+Use syne's API to make them work with syne !
+
+
+## FAQ
+### Why *syne* ?
+*Syne* is an apocope of [synesthesia](https://en.wikipedia.org/wiki/Synesthesia),
+the ability to use a sense to feel another.
+And its short, else no one would use it.
