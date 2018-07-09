@@ -1,0 +1,62 @@
+
+
+
+## Watch your collections
+
+## Listen to your collections
+TODO
+
+## Coloring of sources to detect defects
+TODO
+A parenthesis is missing ? A syntax error is raised ?
+Invoke syne on your source file, and get the syntax errors highlighted :
+
+    python -m syne check-source myfile.py
+
+
+## soundpoints
+
+```python
+from syne import soundpoint
+
+def func():
+    soundpoint()
+    soundpoint(duration=.5)
+    soundpoint()
+
+func()
+func()
+```
+
+Will play two times the three sounds associated to function func, with a longer middle sound.
+
+The sounds are chosen following a note scale, and based on the stacktrace,
+meaning that each calls in function `a` will sound differently between them
+and will be the same for second call.
+
+You can change the scale with the options:
+```python
+from syne import soundpoint
+soundpoint.setopt(scale='C2 major')
+```
+
+
+### soundpoints as an extension of synepoints
+In fact, soundpoints are implemented following the standard interface of Synepoint metaclass,
+allowing one to define its own way to work on breakpoints.
+
+
+
+
+# Inspiration sources
+- The J language, as described [here](https://prog21.dadgum.com/28.html).
+
+# Requirements
+- [magwitch](https://github.com/aluriak/magwitch)
+- [musthe](https://github.com/?/musthe)
+- [PyAudio]()
+- [numpy]() to implement some computation operations
+- [pytest](https://pytest.org) for testing
+
+To install them all, `pip install -r requirements.txt`.
+
