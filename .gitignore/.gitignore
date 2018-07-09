@@ -1,6 +1,0 @@
-venv/
-*.pyc
-__pycache__/
-Session.vim
-*egg.info/
-dist/
