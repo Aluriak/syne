@@ -15,3 +15,5 @@ develop:
 	python setup.py develop
 install_deps:
 	python -c "import configparser; c = configparser.ConfigParser(); c.read('setup.cfg'); print(c['options']['install_requires'])" | xargs pip install -U
+release:  # pip install zest.releaser[recommended]
+	fullrelease
