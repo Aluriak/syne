@@ -1,0 +1,8 @@
+exclude *.mkd
+exclude Makefile
+include README.mkd
+include MANIFEST.in
+prune examples
+prune poc
+prune test
+recursive-include syne *.py
