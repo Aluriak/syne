@@ -1,0 +1,5 @@
+magwitch==0.1.0
+musthe==1.0.0
+numpy==1.14.5
+PyAudio==0.2.11
+pytest==3.6.3
