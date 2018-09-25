@@ -2,6 +2,26 @@
 
 
 ## Watch your collections
+```python
+from syne import pprint
+
+linear = 1, 2, 3, 4, 5
+double_dim = (
+    (1, 2, 3, 4, 5),
+    (1, 3, 2, 4, 5),
+    (1, 2, 1, 4, 7),
+)
+map = {
+    'a': 2,
+    3: 'b',
+    4: 'c',
+    5: 'e',
+    7: 'c',
+}
+pprint(linear)
+pprint(double_dim)
+pprint(map)
+```
 
 ## Listen to your collections
 TODO
