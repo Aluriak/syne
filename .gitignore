@@ -1,0 +1,10 @@
+*.pyc
+*egg.info/
+.cache/
+.pytest_cache/
+Session.vim
+__pycache__/
+build/
+dist/
+syne.egg-info/
+venv/
